@@ -13,3 +13,9 @@ Tudo que você precisa ter é python, pip e docker instalados.
 ### Como rodar o projeto
 Faça primeiro o setup do projeto com o seguinte comando `sh setup.sh` ou `pip install -r requirements.txt`
 Feito isso, digite `python main.py` no terminal e iniciará o projeto.
+
+### Usando com Docker
+Para rodar o projeto com docker, você pode fazer o seguinte:
+`docker build -t nome_da_imagem .`
+`docker run -v  /var/run/docker.sock:/var/run/docker.sock -it nome_da_imagem`
+Com isso, o container iniciará em modo interativo.
